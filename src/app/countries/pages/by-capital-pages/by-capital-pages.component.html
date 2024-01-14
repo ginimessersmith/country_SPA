@@ -1,0 +1,12 @@
+<!-- onValue es el output del searchbox que emite un string-->
+<shared-search-box
+  (onValue)="searchByCapital($event)"
+  placeholder="Buscar por capital"
+></shared-search-box>
+
+<div class="row">
+  <div class="col">
+    <hr />
+    <country-table [countriesInTable]="countries"> </country-table>
+  </div>
+</div>

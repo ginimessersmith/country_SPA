@@ -1,0 +1,14 @@
+<shared-search-box
+  (onValue)="searchByCountries($event)"
+  placeholder="Buscar por Pais"
+>
+</shared-search-box>
+<div class="row">
+  <div class="col">
+    <hr />
+    <country-table
+    [countriesInTable]="countries"
+    > </country-table>
+  </div>
+</div>
+
