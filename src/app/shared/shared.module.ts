@@ -1,33 +1,36 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { HomePagesComponent } from './components/pages/home-pages/home-pages.component';
 import { AboutPagesComponent } from './components/pages/about-pages/about-pages.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
-import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 import { ContactPagesComponent } from './components/pages/contact-pages/contact-pages.component';
+import { HomePagesComponent } from './components/pages/home-pages/home-pages.component';
+import { LoadingSpinnerComponent } from './components/loading-spinner/loading-spinner.component';
+import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { SearchBoxComponent } from './components/search-box/search-box.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 
 
 
 @NgModule({
   declarations: [
-    HomePagesComponent,
     AboutPagesComponent,
-    SidebarComponent,
     ContactPagesComponent,
-    SearchBoxComponent
+    HomePagesComponent,
+    LoadingSpinnerComponent,
+    SearchBoxComponent,
+    SidebarComponent,
   ],
   imports: [
     CommonModule,
     RouterModule
   ],
-  exports:[
-    HomePagesComponent,
+  exports: [
     AboutPagesComponent,
-    SidebarComponent,
     ContactPagesComponent,
-    SearchBoxComponent
+    HomePagesComponent,
+    LoadingSpinnerComponent,
+    SearchBoxComponent,
+    SidebarComponent,
   ]
 
 })
